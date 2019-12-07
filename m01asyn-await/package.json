@@ -1,0 +1,13 @@
+{
+  "name": "m01asyn-await",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --inspect index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leandrojsantos",
+  "license": "ISC"
+}
