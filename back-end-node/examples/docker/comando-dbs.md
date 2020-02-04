@@ -1,4 +1,4 @@
-# COMANDOS BASICOS DOCKER PARA DATABASES
+# Comandos Docker para criar Databases : 
 ----------------------
 # POSTGRESQL
 
@@ -67,12 +67,12 @@ login na interface mongodb:
 
 mongoDB
 
-*aba.: connection
+* aba.: connection
 
     host/port: mongoDB 27017
     database name: admin
 
-*aba.: authentication
+* aba.: authentication
 
     authentication type: scram-sha1
     username: admin
@@ -83,22 +83,22 @@ mongoDB
 
 mongodb-readWhite 
 
-*aba.: connection
+* aba.: connection
 
     host/port: mongodb 27017
     database name: mdb
 
-*aba.: authentication
+* aba.: authentication
 
     authentication type: scram-sha1
     username: user
     password: root
     authentication db: mdb
 
->Ou seja o primeiro login e para entra no mongodb e o segundo entra o bancos (collections) que existem no mongo
+* Ou seja o primeiro login e para entra no mongodb e o segundo entra o bancos (collections) que existem no mongo
 
 ----------------
-***REDIS
+# REDIS
 
 >imagem
 

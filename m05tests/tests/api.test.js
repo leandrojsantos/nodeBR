@@ -6,7 +6,7 @@
 const assert = require('assert')
 const {
     obterPessoas
-} = require('./service')
+} = require('../service')
 
 /**
  * nock = pacote para simular requisicoes
@@ -16,6 +16,7 @@ const nock = require('nock')
  * this.beforeAll = antes de ir para it ele executa 'x' tarefas ou requisicoes 
  */
 describe('Star Wars Tests', function () {
+    this.timeout(3000)
     this.beforeAll(() => {
         const response = {
             count: 1,
@@ -44,12 +45,16 @@ describe('Star Wars Tests', function () {
             .reply(200, response)
     })
 
+    // toda vez que bater nessa API vai retornar esse valor
+    // quando rolar algum resultado diferente o nock vai reclamar
+    // requisições externas não são problemas nossos! Mas temos que validar caso
+    // esteja tudo nos conformes, trazer as informações conforme o esperado
 
     /**
      * it = faz o teste de fato
      */
 
-    it('r2d2 json manipulado', async () => {
+    it('r2d2', async () => {
         const expected = [{
             nome: 'R2-D2',
             peso: '96'
@@ -60,15 +65,17 @@ describe('Star Wars Tests', function () {
     })
 
 /**
- * ex de falha
- *
-    it('r2d2 json manipulado2', async () => {
-        const expected = [{
-            nome: 'R2-D2',
-            peso: '9'
-        }]
-        const nomeBase = `r2-d2`
-        const resultado = await obterPessoas(nomeBase)
-        assert.deepEqual(resultado, expected)
-    })*/
+ * ex de falha pelo peso diferente do experado
+ **/
+    // it('r2d2 com peso errado', async () => {
+    //     const expected = [{
+    //         nome: 'R2-D2',
+    //         peso: '96'
+    //     }]
+    //     const nomeBase = `r2-d2`
+    //     const resultado = await obterPessoas(nomeBase)
+    //     assert.deepEqual(resultado, expected)
+    // })
+
+
 })

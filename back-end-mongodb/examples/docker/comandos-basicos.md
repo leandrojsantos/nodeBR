@@ -1,4 +1,4 @@
-# COMANDOS BASICOS DOCKER
+# Comandos Docker :
 -------------------------
 
 # IMAGEM
@@ -34,6 +34,7 @@
 >lista imagens rodando
 
     docker ps -a
+
 >para todas imagens
 
     $(docker ps -qa)
@@ -92,7 +93,7 @@ __________________
 
 >sai do container
 
-exit
+    exit
 
 >para excluir o container
 
