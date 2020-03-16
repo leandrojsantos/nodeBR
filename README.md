@@ -18,3 +18,8 @@ Cada pasta e modulo do curso, ou seja, cada pasta e projeto diferete com suas de
 
 * https://nerdzao.netlify.com/
 * https://www.meetup.com/pt-BR/Javascript-SP/
+
+
+
+
+![Certificado](certificado/curso.png)
