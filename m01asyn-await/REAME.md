@@ -6,9 +6,21 @@ Async/Await é uma das novas funcionalidades do ES2017. Com ela, é possível es
 
 Essa nova funcionalidade traz inúmeros benefícios quando trabalhamos com funções assíncronas
 
->No index.js fiz mas alguns comentarios
+No index.js fiz mas alguns comentários
 
->Para iniciar projeto
+#### 🎲 Rodando o Projeto
 
-    npm i 
-    npm start
+```bash
+# Clone este repositório
+$ git clone git@github.com:leandrojsantos/node-br.git
+
+# Acesse a pasta do projeto no terminal/cmd, vá para a pasta raiz do projeto
+$ cd node-br/m01asyn-await
+
+# Instale as dependências
+$ npm install
+
+# para iniciar o projeto
+$ npm start
+
+```

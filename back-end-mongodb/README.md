@@ -1,19 +1,104 @@
-# BackEnd com base no MongoDB
---------------------------------------------------
+<h1 align="center">
+     <a href="#" alt="">BackEnd com base no MongoDB</a>
+</h1>
 
->Back-end feito em node.js base para incio de projetos com base unica mongodb, com as seguintes bibliotecas e padrao favor continuar seguindo. 
+<h4 align="center">
+	🚧   Concluído 🚀 🚧
+</h4>
 
-Para inciar o projeto deve ter:
+Tabela de conteúdos
+<!--ts-->
+   * [Sobre o projeto](#-sobre-o-projeto)
+   * [Funcionalidades](#-funcionalidades)
+   * [Layout](#-layout)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+     * [Pré-requisitos](#pré-requisitos)
+     * [Rodando o Projeto](#user-content--rodando-o-projeto)
+   * [Tecnologias](#-tecnologias)
 
-    node, docker instalados apos,
-    npm install (para instalar a node_modules que contem as biblioteca)
-    npm test (para testes na api)
-    npm run dev (para iniciar em dev)
-    npm run prod (para inciar em producao)
-    
-   
->Segue descricao do projeto:
-   
+<!--te-->
+
+
+## 💻 Sobre o projeto
+
+Back-end feito em node.js base para incio de projetos com base unica mongodb.
+
+
+A pasta examples foi criada como exemplos de
+código e comentários sobre como e funciona cada biblioteca e padrão de projeto, também a comentários no código para explicação.
+
+---
+
+## ⚙️ Funcionalidades
+
+- [x] api com mongodb e mongoclient
+- [x] api com crud no banco de dados
+- [x] testes unitários com mocha 
+- [x] modo development e production
+
+---
+
+## 🎨 Layout
+
+O layout da aplicação:
+
+<p align="center">
+  <img alt="mongodb-mdb" title="#mongodb-mdb" src="./assets/home-mobile.png" width="400px">
+
+  <img alt="mongodb-mdb" title="#mongodb-mdb" src="./assets/detalhes-mobile.svg" width="400px">
+</p>
+
+
+---
+
+## 🚀 Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Docker](https://docs.docker.com/engine/install/ubuntu/), [Node na versão 10.19.0](https://nodejs.org/en/)
+
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) e também um navegador/Browser de sua escolha.
+
+#### 🎲 Rodando o Projeto
+
+```bash
+# Clone este repositório
+$ git clone git@github.com:leandrojsantos/node-br.git
+
+# Acesse a pasta do projeto no terminal/cmd, vá para a pasta raiz do projeto
+$ cd node-br/back-end-mongodb
+
+# Instale as dependências
+$ npm install
+
+# para testes na api
+$ npm test
+
+# Executa a aplicação em modo de desenvolvimento
+$ npm run dev
+
+# Executa a aplicação em modo de produção
+$ npm run prod
+
+# O servidor inciará na porta:5000 - acesse http://localhost:5000
+
+obs: package.json manter nas ver citadas as seguites bibliotecas:
+
+    "cross-env": "5.2.0",
+    "dotenv": "8.0.0",
+    "config": "3.2.3",
+    "bcrypt": "3.0.6",
+    "hapi-auth-jwt2": "8.6.1",
+    "hapi-swagger": "10.0.2",
+
+```
+---
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
     1. Resolução de promises com Async/Await
     2. Ambiente e configuração do ciclo de testes com Mocha
     3. 
@@ -38,15 +123,4 @@ Para inciar o projeto deve ter:
     22. MongoClient para interface mongodb (ver example docker) http://localhost:3000/
     23. 
 
-
->obs 1: a pasta examples foi criada como exemplos de
-codigo e comentarios sobre como e funciona cada biblioteca e padrao de projeto
-
->obs 2: package.json manter nas versoes citadas as seguites bibliotecas:
-
-    "cross-env": "5.2.0",
-    "dotenv": "8.0.0",
-    "config": "3.2.3",
-    "bcrypt": "3.0.6",
-    "hapi-auth-jwt2": "8.6.1",
-    "hapi-swagger": "10.0.2",
+---

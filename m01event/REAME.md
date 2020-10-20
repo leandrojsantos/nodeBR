@@ -6,8 +6,18 @@ Mas o que acontece quando chamamos algo como setTimeout, http.get, process.nextT
 
 Vamos dar uma olhada em uma aplicação Node.js comum – um servidor escutando em localhost:3000. Após receber a requisição, o servidor vai chamar wttr.in/ para obter informações do tempo e imprimir algumas mensagens no console e depois retorna a resposta HTTP.
 
->No index.js fiz mas alguns comentarios
+No index.js fiz mas alguns comentários
 
->Para iniciar projeto
+#### 🎲 Rodando o Projeto
 
-    node index.js
+```bash
+# Clone este repositório
+$ git clone git@github.com:leandrojsantos/node-br.git
+
+# Acesse a pasta do projeto no terminal/cmd, vá para a pasta raiz do projeto
+$ cd node-br/m01event
+
+# para iniciar o projeto
+$ node index.js
+
+```

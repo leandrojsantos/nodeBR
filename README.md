@@ -53,15 +53,17 @@ Foco desde básico Javascript, ao avaçado com node.js em ambiente de produção
 
 O layout da aplicação em um navegador
 
-  <img alt="nodebr" title="#nodebr" src="./images/1.png" width="400px">
+<p align="center">
+  <img alt="nodebr-mdb" title="#nodebr-mdb" src="./assets/home-mobile.png" width="400px">
+
+  <img alt="nodebr-mdb" title="#nodebr-mdb" src="./assets/detalhes-mobile.svg" width="400px">
 </p>
 
-  <img alt="nodebr" title="#nodebr" src="./images/2.png" width="400px">
-</p>
+<p align="center">
+  <img alt="nodebr-mdb" title="#nodebr-mdb" src="./assets/home-mobile.png" width="400px">
 
-  <img alt="nodebr" title="#nodebr" src="./images/3.png" width="400px">
+  <img alt="nodebr-mdb" title="#nodebr-mdb" src="./assets/detalhes-mobile.svg" width="400px">
 </p>
-
 ---
 
 ## 🚀 Como executar o projeto

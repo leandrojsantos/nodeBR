@@ -1,14 +1,26 @@
 # tests node
 
-Objetivo iniciar instalação e tomar prática de testes em todas aplicações
+Objetivo iniciar instalação e prática de testes em todas aplicações
 
 Testar se o mapeamento aconteceu com sucesso
 
 Mock de requisições externas HTTP
 
->No service.js e tests.js fiz mas alguns comentarios
+No service.js e tests.js fiz mas alguns comentários
 
->Para iniciar projeto ir na pasta src
+#### 🎲 Rodando o Projeto
 
-    npm i
-    npm test
+```bash
+# Clone este repositório
+$ git clone git@github.com:leandrojsantos/node-br.git
+
+# Acesse a pasta do projeto no terminal/cmd, vá para a pasta raiz do projeto
+$ cd node-br/m05tests
+
+# Instale as dependências
+$ npm install
+
+# para iniciar o projeto
+$ npm test
+
+```

@@ -1,8 +1,20 @@
 # listas javascript = node
 
-Cada arquivo faz um tipo de lista ou filto e tem tambem seus comentarios 
+Cada arquivo é um tipo de lista ou filto e tem também seus comentários 
 
->Para iniciar projeto
+#### 🎲 Rodando o Projeto
 
-    npm i
-    node <nome_do_aquivo>
+```bash
+# Clone este repositório
+$ git clone git@github.com:leandrojsantos/node-br.git
+
+# Acesse a pasta do projeto no terminal/cmd, vá para a pasta raiz do projeto
+$ cd node-br/m04lists
+
+# Instale as dependências
+$ npm install
+
+# para iniciar o projeto
+$ node <nome_do_aquivo>
+
+```
