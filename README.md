@@ -29,7 +29,7 @@ Foram desenvolvidos conceitos como desenvolvimento orientado a testes, autentica
 
 ## ⚙️ Funcionalidades
 
-Foco no desde básico Javascript, ao avaçado em ambiente de produção como:
+Foco desde básico Javascript, ao avaçado com node.js em ambiente de produção como:
 
 - [x] Ciclo de vida, 
 - [x] Variáveis, 
@@ -68,7 +68,7 @@ O layout da aplicação em um navegador
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Docker](https://docs.docker.com/engine/install/ubuntu/), [Node](https://nodejs.org/en/)
+[Git](https://git-scm.com), [Docker](https://docs.docker.com/engine/install/ubuntu/), [Node na versão 10.19.0](https://nodejs.org/en/)
 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) e também um navegador/Browser de sua escolha eu escolhi [Chorme](https://www.google.pt/intl/pt-PT/chrome/?brand=CHBD&gclid=CjwKCAjw1ej5BRBhEiwAfHyh1CqpdiJkRowiF7qVChVWvkTImra14_fVqzdcxXeYoznuxbgYMmtS9BoCP4oQAvD_BwE&gclsrc=aw.ds)
 
@@ -98,7 +98,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 * [Javascript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
 * [Chorme](https://www.google.pt/intl/pt-PT/chrome/?brand=CHBD&gclid=CjwKCAjw1ej5BRBhEiwAfHyh1CqpdiJkRowiF7qVChVWvkTImra14_fVqzdcxXeYoznuxbgYMmtS9BoCP4oQAvD_BwE&gclsrc=aw.ds)
 * [Docker](https://docs.docker.com/engine/install/ubuntu/)
-* [Node](https://nodejs.org/en/)
+* [Node na versão 10.19.0](https://nodejs.org/en/)
 
 **Utilitários**
 
