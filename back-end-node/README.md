@@ -40,20 +40,76 @@ código e comentários sobre como e funciona cada biblioteca e padrão de projet
 
 ## 🎨 Layout
 
-O layout da aplicação:
+ * Os tests com apis da aplicação com mocha, no terminal:
 
 <p align="center">
-  <img alt="mongodb-mdb" title="#node-mdb" src="./assets/home-mobile.png" width="400px">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/1t.png"  width="400px">
 
-  <img alt="node-mdb" title="#node-mdb" src="./assets/detalhes-mobile.svg" width="400px">
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/2t.png" width="400px">
 </p>
 
 <p align="center">
-  <img alt="node-mdb" title="#node-mdb" src="./assets/home-mobile.png" width="400px">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/3t.png"  width="400px">
 
-  <img alt="mongodb-mdb" title="#mongodb-mdb" src="./assets/detalhes-mobile.svg" width="400px">
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/4t.png" width="400px">
 </p>
 
+* O layout da aplicação:
+
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/1.png"  width="400px">
+
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/2.png" width="400px">
+</p>
+
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/3.png"  width="400px">
+
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/4.png" width="400px">
+</p>
+
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/5.png"  width="400px">
+
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/6.png" width="400px">
+</p>
+
+* Cadastro nos bancos de dados tanto postgres (adminer) quanto mongodb (mongoclient):
+
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/1p.png"  width="400px">
+
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/1m.png" width="400px">
+</p>
+
+* Cadastro em forma de corpo da request payload, no terminal:
+ 
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/1c.png"  width="400px">
+
+<p align="center">
+  <img alt="node-mdb" title="#node-mdb" 
+  src="../images/2c.png" width="400px">
+</p>
 
 ---
 
@@ -89,7 +145,7 @@ $ npm run prod
 
 # O servidor inciará na porta:5000 - acesse http://localhost:5000
 
-obs: package.json manter nas ver citadas as seguites bibliotecas:
+obs: package.json manter nas versões as seguites bibliotecas:
 
     "cross-env": "5.2.0",
     "dotenv": "8.0.0",

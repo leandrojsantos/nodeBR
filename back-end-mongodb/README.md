@@ -10,7 +10,6 @@ Tabela de conteúdos
 <!--ts-->
    * [Sobre o projeto](#-sobre-o-projeto)
    * [Funcionalidades](#-funcionalidades)
-   * [Layout](#-layout)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
      * [Rodando o Projeto](#user-content--rodando-o-projeto)
@@ -35,19 +34,6 @@ código e comentários sobre como e funciona cada biblioteca e padrão de projet
 - [x] api com crud no banco de dados
 - [x] testes unitários com mocha 
 - [x] modo development e production
-
----
-
-## 🎨 Layout
-
-O layout da aplicação:
-
-<p align="center">
-  <img alt="mongodb-mdb" title="#mongodb-mdb" src="./assets/home-mobile.png" width="400px">
-
-  <img alt="mongodb-mdb" title="#mongodb-mdb" src="./assets/detalhes-mobile.svg" width="400px">
-</p>
-
 
 ---
 
@@ -83,7 +69,7 @@ $ npm run prod
 
 # O servidor inciará na porta:5000 - acesse http://localhost:5000
 
-obs: package.json manter nas ver citadas as seguites bibliotecas:
+obs: package.json manter nas versões as seguites bibliotecas:
 
     "cross-env": "5.2.0",
     "dotenv": "8.0.0",
