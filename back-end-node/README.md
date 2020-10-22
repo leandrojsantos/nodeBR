@@ -95,7 +95,7 @@ código e comentários sobre como e funciona cada biblioteca e padrão de projet
   <img alt="node-mdb" title="#node-mdb" 
   src="../images/1p.png"  width="400px">
 
-<p align="center">
+
   <img alt="node-mdb" title="#node-mdb" 
   src="../images/1m.png" width="400px">
 </p>
@@ -106,7 +106,7 @@ código e comentários sobre como e funciona cada biblioteca e padrão de projet
   <img alt="node-mdb" title="#node-mdb" 
   src="../images/1c.png"  width="400px">
 
-<p align="center">
+
   <img alt="node-mdb" title="#node-mdb" 
   src="../images/2c.png" width="400px">
 </p>
