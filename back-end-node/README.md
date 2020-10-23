@@ -102,11 +102,10 @@ código e comentários sobre como e funciona cada biblioteca e padrão de projet
 
 * Cadastro em forma de corpo da request payload, no terminal:
  
-<p align="right">
+<p align="left">
   <img alt="node-mdb" title="#node-mdb" 
   src="../images/1c.png"  width="400px">
 
-<p align="right">
   <img alt="node-mdb" title="#node-mdb" 
   src="../images/2c.png" width="400px">
 </p>
