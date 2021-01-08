@@ -2,9 +2,9 @@ class NotImplementedException extends Error {
   constructor() {
     super('Not Implemented Exception');
   }
-}
-//interface
-class ICrud {
+ }
+ //interface
+ class ICrud {
   create(item) {
     throw new NotImplementedException();
   }
@@ -17,26 +17,26 @@ class ICrud {
   delete(id) {
     throw new NotImplementedException();
   }
-}
-
-class MongoDBStrategy extends ICrud {
+ }
+  
+ class MongoDBStrategy extends ICrud {
   constructor() {
     super();
   }
   create(item) {
     console.log('MongoDBStrategy');
   }
-}
-class PostgreSQLStrategy extends ICrud {
+ }
+ class PostgreSQLStrategy extends ICrud {
   constructor() {
     super();
   }
   create(item) {
     console.log('PostgreSQLStrategy');
   }
-}
-
-class ContextoStrategy extends ICrud {
+ }
+  
+ class ContextoStrategy extends ICrud {
   constructor(database) {
     super();
     this._database = database;
@@ -53,11 +53,11 @@ class ContextoStrategy extends ICrud {
   delete(id) {
     return this._database.delete(id, item);
   }
-}
-
-const contextMongo = new ContextoStrategy(new MongoDBStrategy());
-contextMongo.create();
-const context = new ContextoStrategy(new PostgreSQLStrategy());
-context.create();
-
-context.read();
+ }
+  
+ const contextMongo = new ContextStrategy(new MongoDBStrategy());
+ contextMongo.create();
+ const context = new ContextStrategy(new PostgreSQLStrategy());
+ context.create();
+  
+ context.read(); 

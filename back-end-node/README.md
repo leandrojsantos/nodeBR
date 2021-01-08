@@ -26,6 +26,9 @@ Back-end feito em node.js base para incio de projetos multi database
 A pasta examples foi criada como exemplos de
 código e comentários sobre como e funciona cada biblioteca e padrão de projeto, também a comentários no código para explicação.
 
+Observação por causa descontinuamento do framework [hapijs](https://hapi.dev/) e essencial para que o back-end funcione, corretamente que este projeto seja instalado na versão do [Node na versão 10.19.0](https://nodejs.org/en/)
+devido a esse incômodo sugiro que tenha o [nvm](https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b) que serve para gerenciar versões
+
 ---
 
 ## ⚙️ Funcionalidades
@@ -111,27 +114,26 @@ código e comentários sobre como e funciona cada biblioteca e padrão de projet
 </p>
 
 ---
-
 ## 🚀 Como executar o projeto
 
 ### Pré-requisitos
-
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Docker](https://docs.docker.com/engine/install/ubuntu/), [Node na versão 10.19.0](https://nodejs.org/en/)
+[Git](https://git-scm.com), [Docker](https://docs.docker.com/engine/install/ubuntu/), [Node na versão 10.19.0](https://nodejs.org/en/), para controle de versão do node [nvm](https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b)
 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) e também um navegador/Browser de sua escolha.
 
 #### 🎲 Rodando o Projeto
 
 ```bash
-# Clone este repositório
-$ git clone git@github.com:leandrojsantos/node-br.git
+# Acesse a pasta do projeto no vscode, vá para a pasta docker do projeto
 
-# Acesse a pasta do projeto no terminal/cmd, vá para a pasta raiz do projeto
-$ cd node-br/back-end-node
+#Acesse o arquivo comando-dbs.md e faça os passos de ambos database no terminal em seguida faça login nos dois database como descristo no arquivo comando-dbs.md
 
 # Instale as dependências
 $ npm install
+
+# Tira erros de dependências
+$ npm audit fix --force
 
 # para testes na api
 $ npm test
@@ -142,17 +144,15 @@ $ npm run dev
 # Executa a aplicação em modo de produção
 $ npm run prod
 
-# O servidor inciará na porta:5000 - acesse http://localhost:5000
+# O servidor iniciará na porta:5000 - acesse http://localhost:5000
 
-obs: package.json manter nas versões as seguites bibliotecas:
-
-    "cross-env": "5.2.0",
-    "dotenv": "8.0.0",
-    "config": "3.2.3",
-    "bcrypt": "3.0.6",
-    "hapi-auth-jwt2": "8.6.1",
-    "hapi-swagger": "10.0.2",
-
+# Obs: no arquivo package.json deve se manter nas versões das seguintes //bibliotecas, as outras caso queira, podem atualizar com o tempo:
+  "cross-env": "5.2.0",
+  "dotenv": "8.0.0",
+  "config": "3.2.3",
+  "bcrypt": "3.0.6",
+  "hapi-auth-jwt2": "8.6.1",
+  "hapi-swagger": "10.0.2",
 ```
 ---
 
@@ -184,3 +184,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
     22. MongoClient para interface mongodb (ver example docker) http://localhost:3000/
     23. nanoid para criar um id na url-encutadas
 ---
+
+
+

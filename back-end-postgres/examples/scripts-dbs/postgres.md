@@ -1,7 +1,6 @@
-# COMANDOS BASICOS DO POSTGRES
------------------------
+### COMANDOS BASICOS DO POSTGRES
 
->criar tabela: com id gerado automatico como chave primaria
+criar tabela: com id gerado automatico como chave primaria
 
     DROP TABLE IF EXISTS TB_HEROIS;
     CREATE TABLE TB_HEROIS(
@@ -10,25 +9,29 @@
         PODER TEXT NOT NULL
         )
 
->cread item
+cread item
 
     INSERT INTO TB_HEROIS(NOME, PODER)
     VALUES  ('Hulk', 'forca'),
             ('Chapolin', 'marreta biônica'),
             ('Bruce lee', 'agilidade')
 
->read item
+read item
 
     SELECT * FROM TB_HEROIS
     SELECT * FROM TB_HEROIS WHERE PODER = 'agilidade'
     SELECT id FROM TB_HEROIS WHERE PODER = 'forca'
 
->update item
+update item
 
     UPDATE TB_HEROIS 
     SET PODER = 'força e raiva'
     WHERE ID = '1'
 
->delete item
+delete item
 
     DELETE FROM TB_HEROIS WHERE ID = '2'
+
+delete tabela
+
+    DROP TABLE TB_HEROIS

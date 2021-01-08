@@ -78,9 +78,9 @@ $ git clone git@github.com:leandrojsantos/node-br.git
 # Acesse a pasta do projeto no terminal/cmd
 $ cd node-br/<nome-da-pasta-desejada>
 
-# dentro da pasta desejada e a raiz do projeto, é abrir o arquivo ler readme.md onde lhe indica como iniciar projeto, mas a maioria
-$ npm install
-$ npm start ou npm run dev 
+# Acesse a pasta do projeto com nome de back-end-node, abrir o arquivo README.md seguir os passos nele descritos.
+ 
+# Tenha certeza que os passos do README.md da pasta back-end-hapijs estão em serviço.
 
 ```
 ---
@@ -109,4 +109,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Certificado do curso 
 
 ![Certificado](certificado/curso.png)
-
