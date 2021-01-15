@@ -20,7 +20,7 @@ const MOCK_USER_ATUALIZAR = {
 
 let context = {}
 
-describe('==> PostgreSQL Suite de Testes', function () {
+describe('****Postgres Strategy Suite de Testes****', function () {
   this.timeout(Infinity);
   before(async () => {
     const connection = await PostgresStrategy.connect()
@@ -32,25 +32,25 @@ describe('==> PostgreSQL Suite de Testes', function () {
     await context.create(MOCK_USER_ATUALIZAR);
   });
 
-  it('t1conexao', async () => {
+  it('T1 conexao', async () => {
     const result = await context.isConnected();
     equal(result, true);
   });
   
   //verificar 
-  // it('t2cadastra', async () => {
+  // it('T2 cadastra', async () => {
   //   const result = await context.create(MOCK_USER_CADASTRAR);
   //   delete result.dataValues.id;
   //   deepEqual(result.dataValues, MOCK_USER_CADASTRAR);
   // });
 
-  it('t3listar', async () => {
+  it('T3 listar', async () => {
     const [result] = await context.read(MOCK_USER_CADASTRAR);
     delete result.id;
     deepEqual(result, MOCK_USER_CADASTRAR);
   });
 
-  it('t4atualiza', async () => {
+  it('T4 atualiza', async () => {
     const [result] = await context.read({});
 
     const novoItem = {
@@ -62,7 +62,7 @@ describe('==> PostgreSQL Suite de Testes', function () {
     deepEqual(update, 1);
   });
 
-  it('t5remove', async () => {
+  it('T5 remove', async () => {
     const [item] = await context.read({});
     const result = await context.delete(item.id);
     deepEqual(result, 1);

@@ -25,14 +25,14 @@ function cadastrar() {
     });
 }
 
-describe('==> API Qrcode Suite Tests', function () {
+describe('****Api Qrcode Suite Tests****', function () {
     this.beforeAll(async () => {
         app = await api
         const result = await cadastrar()
         MOCK_ID = JSON.parse(result.payload)._id
     })
 
-    it('t1tokenErrado', async () => {
+    it('T1 token Errado', async () => {
         const result = await app.inject({
             method: 'GET',
             url: '/qrcodes',
@@ -43,7 +43,7 @@ describe('==> API Qrcode Suite Tests', function () {
         assert.deepEqual(JSON.parse(result.payload).error, "Unauthorized")
     })
 
-    it('t2lista /qrcodes', async () => {
+    it('T2 lista', async () => {
         const result = await app.inject({
             method: 'GET',
             url: '/qrcodes',
@@ -54,7 +54,7 @@ describe('==> API Qrcode Suite Tests', function () {
         assert.ok(Array.isArray(JSON.parse(result.payload)))
     })
 
-    it('t3cadastra /qrcodes', async () => {
+    it('T3 cadastra', async () => {
         const result = await cadastrar()
         //console.log(`result`, result)
         //console.log((bodyParser.payload), result)
@@ -63,7 +63,7 @@ describe('==> API Qrcode Suite Tests', function () {
 
     })
 
-    it('t4payloadErrado', async () => {
+    it('T4 payload Errado', async () => {
         const result = await app.inject({
             method: 'POST',
             url: '/qrcodes',
@@ -77,7 +77,7 @@ describe('==> API Qrcode Suite Tests', function () {
         assert.ok(payload.message.search('"originalUrl" is required') !== -1)
     })
 
-    it('t5atualiza /qrcodes/{id}', async () => {
+    it('T5 atualiza', async () => {
         const result = await app.inject({
             method: 'PATCH',
             url: `/qrcodes/${MOCK_ID}`,
@@ -92,7 +92,7 @@ describe('==> API Qrcode Suite Tests', function () {
         assert.deepEqual(JSON.parse(result.payload).nModified, 1)
     })
 
-    it('t6remove /qrcodes/{id}', async () => {
+    it('T6 remove', async () => {
         const result = await app.inject({
             method: 'DELETE',
             url: `/qrcodes/${MOCK_ID}`,
@@ -102,7 +102,7 @@ describe('==> API Qrcode Suite Tests', function () {
         assert.deepEqual(JSON.parse(result.payload).n, 1)
     })
 
-    it('t7verificaURL /qrcodes', async () => {
+    it('T7 verifica url', async () => {
         const result = await app.inject({
             method: 'POST',
             url: `/qrcodes`,

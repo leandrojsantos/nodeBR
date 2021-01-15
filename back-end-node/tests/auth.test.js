@@ -18,7 +18,7 @@ const USER_DB = {
 
 //auth => hash '$2b$04$meQYE5L8R6Wo5SfI8m6a7OFWmuJgPtFlvHveO5fN.bd8gM.DnzatS'
 
-describe('==> Auth Suite de Testes', function () {
+describe('****Auth Suite de Testes****', function () {
     this.beforeAll(async () => {
         app = await api
 
@@ -28,7 +28,7 @@ describe('==> Auth Suite de Testes', function () {
         await postgresModel.update(null, USER_DB, true)
     })
 
-    it('t1obterToken', async () => {
+    it('T1 obter Token', async () => {
         const result = await app.inject({
             method: 'POST',
             url: '/login',
@@ -42,7 +42,7 @@ describe('==> Auth Suite de Testes', function () {
         assert.ok(JSON.parse(result.payload).token.length > 10)
     })
 
-    it('t2loginErrado', async () => {
+    it('T2 login Errado', async () => {
         const result = await app.inject({
             method: 'POST',
             url: '/login',

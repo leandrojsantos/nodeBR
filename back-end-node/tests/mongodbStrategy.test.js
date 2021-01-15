@@ -22,7 +22,7 @@ const MOCK_FILE_ATUALIZAR = {
 let MOCK_FILE_ATUALIZAR_ID = '';
 let context = {}
 
-describe('==> MongoDB Suite de Testes', function () {
+describe('****Mongodb Strategy Suite de Testes****', function () {
     this.beforeAll(async () => {
         const connection = MongoDb.connect()
         context = new Context(new MongoDb(connection, FileSchema))
@@ -31,14 +31,14 @@ describe('==> MongoDB Suite de Testes', function () {
         MOCK_FILE_ATUALIZAR_ID = result._id
     })
 
-    it('t1conexao', async () => {
+    it('T1 conexao', async () => {
         const result = await context.isConnected()
         const expected = 'Conectado'
 
         assert.deepEqual(result, expected)
     })
 
-    it('t2cadastro', async () => {
+    it('T2 cadastro', async () => {
         const {
             name,
             size,
@@ -54,7 +54,7 @@ describe('==> MongoDB Suite de Testes', function () {
         }, MOCK_FILE_CADASTRAR)
     })
 
-    it('t3lista', async () => {
+    it('T3 lista', async () => {
         const [{
             name,
             size,
@@ -72,14 +72,14 @@ describe('==> MongoDB Suite de Testes', function () {
         assert.deepEqual(result, MOCK_FILE_CADASTRAR)
     })
 
-    it('t4atualiza', async () => {
+    it('T4 atualiza', async () => {
         const result = await context.update(MOCK_FILE_ATUALIZAR_ID, {
             url: 'https://git.com/leandrojsantos'
         })
         assert.deepEqual(result.nModified, 1)
     })
 
-    it('t5remove', async () => {
+    it('T5 remove', async () => {
         const result = await context.delete(MOCK_FILE_ATUALIZAR_ID)
         assert.deepEqual(result.n, 1)
     })

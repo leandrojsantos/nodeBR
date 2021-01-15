@@ -24,14 +24,14 @@ function cadastrar() {
     });
 }
 
-describe('==> API File Suite Tests', function () {
+describe('****Api File Suite de Testes****', function () {
     this.beforeAll(async () => {
         app = await api
         const result = await cadastrar()
         MOCK_ID = JSON.parse(result.payload)._id
     })
 
-    it('t1tokenErrado', async () => {
+    it('T1 token Errado', async () => {
         const result = await app.inject({
             method: 'GET',
             url: '/files',
@@ -41,8 +41,8 @@ describe('==> API File Suite Tests', function () {
         assert.deepEqual(statusCode, 401)
         assert.deepEqual(JSON.parse(result.payload).error, "Unauthorized")
     })
-
-    it('t2lista /files', async () => {
+  
+    it('T2 lista', async () => {
         const result = await app.inject({
             method: 'GET',
             url: '/files',
@@ -54,7 +54,7 @@ describe('==> API File Suite Tests', function () {
         assert.ok(Array.isArray(JSON.parse(result.payload)))
     })
 
-    it('t3cadastra /files', async () => {
+    it('T3 cadastra', async () => {
         const result = await cadastrar()
         //console.log(`result`, result)
         //console.log((bodyParser.payload), result)
@@ -63,7 +63,7 @@ describe('==> API File Suite Tests', function () {
 
     })
 
-    it('t4payloadErrado', async () => {
+    it('T4 payload Errado', async () => {
         const result = await app.inject({
             method: 'POST',
             url: '/files',
@@ -77,7 +77,7 @@ describe('==> API File Suite Tests', function () {
         assert.ok(payload.message.search('"name" is required') !== -1)
     })
 
-    it('t5atualiza /files/{id}', async () => {
+    it('T5 atualiza', async () => {
         const result = await app.inject({
             method: 'PATCH',
             url: `/files/${MOCK_ID}`,
@@ -94,7 +94,7 @@ describe('==> API File Suite Tests', function () {
 
     })
 
-    it('t6remove /files/{id}', async () => {
+    it('T6 remove', async () => {
         const result = await app.inject({
             method: 'DELETE',
             url: `/files/${MOCK_ID}`,
