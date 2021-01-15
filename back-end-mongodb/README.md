@@ -1,5 +1,5 @@
 <h1 align="center">
-     <a href="#" alt="">BackEnd nodejs com hapijs/swagger, com base de dados no MongoDB</a>
+     <a href="#" alt="">BackEnd nodejs com hapijs/swagger, base de dados no MongoDB</a>
 </h1>
 
 <h4 align="center">
@@ -51,7 +51,9 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 # Acesse a pasta do projeto no vscode, vá para a pasta docker do projeto
 
-#Acesse o arquivo comando-dbs.md e faça os passos para do mongodb terminal em seguida já com imagens docker do mongodb/mongoclient, abra seu navegador em http://localhost:3000/ faça login como está no arquivo comando-dbs
+# Acesse o arquivo comando-dbs.md e faça os passos para do mongodb terminal  
+# Seguida já com imagens docker do mongodb/mongoclient
+# Abra seu navegador em http://localhost:3000/ faça login como está no arquivo comando-dbs
 
 # Instale as dependências
 $ npm install
