@@ -32,7 +32,7 @@ class PostgreSQLStrategy extends IDb {
       }
 
     })
-    console.log('=> POSTGRESQL OK');
+    console.log('POSTGRESQL OK');
     return sequelize
   }
 

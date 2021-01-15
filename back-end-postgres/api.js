@@ -28,7 +28,7 @@ const JWT_KEY_ROOT = process.env.JWT_KEY
 const swaggerConfig = {
     info: {
         title: 'API Restfull - Postgres',
-        version: 'v5.0'
+        version: 'v0.0'
     },
 }
 
@@ -95,7 +95,7 @@ async function main() {
     ])
 
     await app.start()
-    console.log('=> API SWAGGER OK na porta', app.info.port)
+    console.log('API SWAGGER OK, na porta', app.info.port, 'link abaixo')
     console.log(`${'http://localhost:5000/documentation'}`)
     return app;
 }

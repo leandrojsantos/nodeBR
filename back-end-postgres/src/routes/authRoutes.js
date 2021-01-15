@@ -6,7 +6,7 @@ const Boom = require('boom')
 const PasswordHelper = require('../helpers/passwordHelper')
 
 const USER = {
-    username: 'Chapolin',
+    username: 'mock',
     password: 'auth',
 }
 const Jwt = require('jsonwebtoken')
@@ -46,11 +46,11 @@ class AuthRoutes extends BaseRoute {
             handler: async (request, headers) => {
                 const {
                     username,
-                    password
+                    password,
                 } = request.payload
 
                 const [USER] = await this.db.read({
-                    username: username.toLowerCase()
+                    username: username.toLowerCase(),
                 })
 
                 if (!USER) {

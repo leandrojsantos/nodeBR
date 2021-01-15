@@ -5,10 +5,10 @@ const Boom = require('boom')
 const PasswordHelper = require('../helpers/passwordHelper')
 
 const USER = {
-    username: 'Hulk',
+    username: 'mock',
     password: 'auth',
 }
-const Jwt = require('jsonwebtoken')
+
 
 class UserRoutes extends BaseRoute {
     constructor(db) {
@@ -23,7 +23,7 @@ class UserRoutes extends BaseRoute {
             config: {
                 tags: ['api'],
                 description: 'Listar users',
-                notes: 'Retorna a base inteira de users e password com hash',
+                notes: 'Retorna a base de users e password com hash',
 
                 validate: {
                     failAction: (request, h, err) => {
@@ -60,18 +60,18 @@ class UserRoutes extends BaseRoute {
                     },
                     payload: {
                         username: Joi.string().min(3).max(30).required(),
-                        password: Joi.string().min(3).max(30).required()
+                        password: Joi.string().min(3).max(30).required(),
                     }
                 }
             },
             handler: async (request, headers) => {
                 const payload = request.payload
                 const {
-                    username
+                    username,
                 } = request.payload
 
                 const [USER] = await this.db.read({
-                    username: username.toLowerCase()
+                    username: username.toLowerCase(),
                 })
 
                 if (!USER) {
@@ -81,7 +81,7 @@ class UserRoutes extends BaseRoute {
                     }
 
                     console.log(`payload`, payload)
-                return this.db.create(userNew)
+                    return this.db.create(userNew)
                 }
 
                 return Boom.badRequest('Username ja existe')
@@ -114,7 +114,7 @@ class UserRoutes extends BaseRoute {
                     },
                     payload: {
                         username: Joi.string().min(3).max(30).required(),
-                        password: Joi.string().min(3).max(30).required()
+                        password: Joi.string().min(3).max(30).required(),
                     }
                 }
             },

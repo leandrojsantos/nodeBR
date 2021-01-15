@@ -11,7 +11,7 @@ const nanoid = require('nanoid')
 
 const MOCK_USER_CADASTRAR = {
   username:  nanoid(7),
-  password: '8m6a7OFeQYE5LWmuJgPtFlvHveO5fN.kfsfhAAsbd8gM.DSAghrWw'
+  password: '8m6a7OFeQYE5LWmuJgPtFlvHveO5fN.kfsfhAAsbd8gM.DSAghrWw', 
 }
 const MOCK_USER_ATUALIZAR = {
   username: nanoid(7),
@@ -20,7 +20,7 @@ const MOCK_USER_ATUALIZAR = {
 
 let context = {}
 
-describe('==> PostgreSQL Suite de Testes', function () {
+describe('****Postgre Strategy Suite de Testes****', function () {
   this.timeout(Infinity);
   before(async () => {
     const connection = await PostgresStrategy.connect()
@@ -32,25 +32,26 @@ describe('==> PostgreSQL Suite de Testes', function () {
     await context.create(MOCK_USER_ATUALIZAR);
   });
 
-  it('t1conexao', async () => {
+  it('T1 conexao', async () => {
     const result = await context.isConnected();
     equal(result, true);
   });
   
   //verificar 
-  // it('t2cadastra', async () => {
+  // it('T2 cadastra', async () => {
   //   const result = await context.create(MOCK_USER_CADASTRAR);
   //   delete result.dataValues.id;
   //   deepEqual(result.dataValues, MOCK_USER_CADASTRAR);
   // });
 
-  it('t3listar', async () => {
+  it('T3 listar', async () => {
     const [result] = await context.read(MOCK_USER_CADASTRAR);
     delete result.id;
     deepEqual(result, MOCK_USER_CADASTRAR);
+    console.log('result', result)
   });
 
-  it('t4atualiza', async () => {
+  it('T4 atualiza', async () => {
     const [result] = await context.read({});
 
     const novoItem = {
@@ -62,9 +63,10 @@ describe('==> PostgreSQL Suite de Testes', function () {
     deepEqual(update, 1);
   });
 
-  it('t5remove', async () => {
+  it('T5 remove', async () => {
     const [item] = await context.read({});
     const result = await context.delete(item.id);
     deepEqual(result, 1);
   });
+  
 });

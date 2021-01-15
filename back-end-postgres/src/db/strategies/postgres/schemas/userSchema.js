@@ -12,20 +12,18 @@ const UserSchema = {
     },
     username: {
       type: Sequelize.STRING,
-      unique: true,
       required: true,
     },
     password: {
       type: Sequelize.STRING,
       required: true,
-    }
+    },
   },
   options: {
     //opcoes para base existente
     tableName: 'TB_USUARIOS',
     freezeTableName: false,
     timestamps: false,
-
   }
 }
 
