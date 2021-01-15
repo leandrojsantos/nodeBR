@@ -78,9 +78,11 @@ $ git clone git@github.com:leandrojsantos/node-br.git
 # Acesse a pasta do projeto no terminal/cmd
 $ cd node-br/<nome-da-pasta-desejada>
 
-# Acesse a pasta do projeto com nome de back-end-node, abrir o arquivo README.md seguir os passos nele descritos.
+# Acesse a pasta do projeto com nome de back-end-node
+
+# Abrir o arquivo README.md seguir os passos nele descritos.
  
-# Tenha certeza que os passos do README.md da pasta back-end-hapijs estão em serviço.
+# Tenha certeza que os passos do README.md da pasta back-end-node estão em serviço.
 
 ```
 ---
@@ -98,7 +100,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 * [Node na versão 10.19.0](https://nodejs.org/en/)
 
 **Utilitários**
-
 
 [Curso Completo](https://cursos.nodebr.org/p/node-js-para-iniciantes-nodebr)
 
