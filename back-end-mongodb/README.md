@@ -72,7 +72,7 @@ $ npm run prod
 
 # O servidor iniciará na porta:5000 - acesse http://localhost:5000/documentation
 
-# Obs: no arquivo package.json deve se manter as bibliotecas nas versões seguintes :
+# Obs: no arquivo package.json deve se manter as dependências nas versões seguintes :
   "devDependencies": {
     "mocha": "^7.1.1",
     "nyc": "^15.0.0",
