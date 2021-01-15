@@ -22,14 +22,14 @@ function cadastrar() {
     });
 }
 
-describe('==> API Users Suite Tests', function () {
+describe('****Api Users Suite de Testes****', function () {
     this.beforeAll(async () => {
         app = await api
         const result = await cadastrar()
         MOCK_ID = JSON.parse(result.payload)._id
     })
 
-    it('t1tokenErrado', async () => {
+    it('T1 token Errado', async () => {
         const result = await app.inject({
             method: 'GET',
             url: '/users',
@@ -40,7 +40,7 @@ describe('==> API Users Suite Tests', function () {
         assert.deepEqual(JSON.parse(result.payload).error, "Unauthorized")
     })
 
-    it('t2lista /users', async () => {
+    it('T2 lista', async () => {
         const result = await app.inject({
             method: 'GET',
             url: '/users',
@@ -52,7 +52,7 @@ describe('==> API Users Suite Tests', function () {
         assert.ok(Array.isArray(JSON.parse(result.payload)))
     })
 
-    it('t3cadastra /users', async () => {
+    it('T3 cadastra ', async () => {
         const result = await cadastrar()
         //console.log(`result`, result)
         //console.log((bodyParser.payload), result)
@@ -61,7 +61,7 @@ describe('==> API Users Suite Tests', function () {
         assert.deepEqual(JSON.parse(result.payload).username, NAME_MOCK)
     })
 
-    // it('t4usernameRepetido /users', async () => {
+    // it('T4 usernameRepetido', async () => {
     //     const result = await cadastrar()
     //     //console.log(`result`, result)
     //     //console.log((bodyParser.payload), result)
@@ -70,7 +70,7 @@ describe('==> API Users Suite Tests', function () {
     //     assert.deepEqual(JSON.parse(result.payload).username, NAME_MOCK)
     // })
 
-    it('t5payloadErrado', async () => {
+    it('T5 payload Errado', async () => {
         const result = await app.inject({
             method: 'POST',
             url: '/users',
@@ -84,7 +84,7 @@ describe('==> API Users Suite Tests', function () {
         assert.ok(payload.message.search('"username" is required') !== -1)
     })
 
-    it('t6atualiza /users/{id}', async () => {
+    it('T6 atualiza', async () => {
         const result = await app.inject({
             method: 'PATCH',
             url: `/users/${MOCK_ID}`,
@@ -99,7 +99,7 @@ describe('==> API Users Suite Tests', function () {
 
     })
 
-    it('t7remove /users/{id}', async () => {
+    it('T7 remove', async () => {
         const result = await app.inject({
             method: 'DELETE',
             url: `/users/${MOCK_ID}`,

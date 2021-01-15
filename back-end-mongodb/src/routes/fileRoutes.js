@@ -53,7 +53,7 @@ class FileRoutes extends BaseRoute {
                     }).unknown(),
                     payload: {
                         name: Joi.string().min(3).max(50).required(),
-                        size: Joi.string().min(2).max(10),
+                        size: Joi.number().integer().positive().min(1).required(),
                         key: Joi.string().min(2).max(100),
                         url: Joi.string().min(2).max(200)
                     }
